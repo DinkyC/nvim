@@ -13,7 +13,7 @@ keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- Compile
-keymap.set("n", "<leader>cc", ":!g++ -Wall -Wextra -Werror -Wshadow -pedantic -Wconversion -Wfloat-equal -Wsign-compare -std=c++23 -O0 -o %< %<CR>")
+keymap.set("n", "<leader>cc", ":!g++ -Wall -Wextra -Werror -Wshadow -pedantic -Wconversion -Wfloat-equal -Wsign-compare -std=c++20 -O0 -o %< %<CR>")
 
 -- Run 
 keymap.set("n", "<leader>r", ":!./%< <CR>")
