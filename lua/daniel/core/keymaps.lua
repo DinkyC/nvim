@@ -4,12 +4,25 @@ local keymap = vim.keymap
 ---------------------
 -- General Keymaps
 ---------------------
-
+-- run browser sync 
+keymap.set("n", "<leader>bs", ":!browser-sync start --server --files '*.js, *.html, *.css'<CR>")
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
+
+-- Compile
+keymap.set("n", "<leader>cc", ":!g++ -Wall -Wextra -Werror -Wshadow -pedantic -Wconversion -Wfloat-equal -Wsign-compare -std=c++23 -O0 -o %< %<CR>")
+
+-- Run 
+keymap.set("n", "<leader>r", ":!./%< <CR>")
+
+-- Markdown Preview
+keymap.set("n", "<leader>p", ":MarkdownPreview<CR>")
+
+-- Terminal 
+keymap.set("n", "<leader>t", ":terminal<CR>")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
