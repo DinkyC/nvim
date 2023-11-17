@@ -11,4 +11,6 @@ require("daniel.plugins.lsp.mason")
 require("daniel.plugins.lsp.lspsaga")
 require("daniel.plugins.lsp.lspconfig")
 require("daniel.plugins.colorizer")
-require("daniel.plugins.markdown")
+--require("daniel.plugins.markdown")
+require("daniel.plugins.vimspector")
+
